@@ -1,5 +1,5 @@
-import java.util.*;
 
+import java.util.*;
 
 /** Handles choice of enemy type during combat, and most combat functions. */
 public class Combat
@@ -182,7 +182,6 @@ public class Combat
    String retVal = potType[x];
    return retVal;   
  }
-
 
  /** the post combat sequence, offering the player a choice whether to rest, loot or leave */
  public static void loot() 

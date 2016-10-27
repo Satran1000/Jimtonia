@@ -1,18 +1,15 @@
 import java.util.*;
 
-
 /** This class is used to assign the Character and related statistics.
  * The player can choose name, race and class of their character which is assigned to variables stored in the MainApp class
  */
 public class CharBuild
 {
 
-
 	public static void main (String[] args) 
 	  {
 	    charbuild();
 	  }
-
 
 	/** this is the character building function, it takes what the player puts in and assigns them to variables stored in the MainApp Class through calling various functions */
 	public static void charbuild()
@@ -51,7 +48,7 @@ public class CharBuild
 	    MainApp.potions[0] = 1;
 	    MainApp.potions[1] = 3;
 	    MainApp.potions[2] = 1;
-	    MainApp.coins = 0;
+	    MainApp.coins = 50;
 	  }
 	
 	/** Used to assign the playerName Variable, and stores it in the MainApp Class */
@@ -105,7 +102,6 @@ public class CharBuild
 	  }
 	  }
 
-
 	}
 	
 	/** Used to assign the playerclass Variable, adding extra points to the player's statistics and giving them a starting weapon based on their class selection, storing to the MainApp class */
@@ -136,7 +132,6 @@ public class CharBuild
 		            MainApp.playerStats[3] = MainApp.playerStats[3] + 1;
 		            MainApp.playerStats[4] = MainApp.playerStats[4] + 5;
 		            MainApp.inv[0][0] = '$'; //Bow
-
 
 			    return;
 			    

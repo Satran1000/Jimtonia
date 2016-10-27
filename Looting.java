@@ -19,9 +19,17 @@ public class Looting
 		 {
 			 loot(1);
 		 }
-		 else if (lootchance >= 6 && enemyname == "rat")
+		 else if (lootchance < 4 && enemyname == "ogre")
+		 {
+			System.out.println("the corpse has nothing left on it!");
+		 }
+		 if (lootchance >= 6 && enemyname == "rat")
 		 {
 			 loot(2);
+		 }
+		 else if (lootchance < 6 && enemyname == "rat")
+		 {
+			System.out.println("the corpse has nothing left on it!");
 		 }
 	 }
 	

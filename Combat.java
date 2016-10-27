@@ -206,7 +206,10 @@ public class Combat
         	 {
         		 Looting.lootBody(MainApp.enemyName);
         	 }
-        	 else System.out.println("the corpse has nothing left on it!");
+           if (MainApp.corpse == false)
+           {
+             System.out.println("the corpse has nothing left on it!"); 
+           }
         	 
            break;
            

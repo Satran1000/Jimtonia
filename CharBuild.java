@@ -14,7 +14,7 @@ public class CharBuild
 	/** this is the character building function, it takes what the player puts in and assigns them to variables stored in the MainApp Class through calling various functions */
 	public static void charbuild()
 	  {
-	    System.out.println("Welcome to the Character builder for JimQuest 'Lite'!");
+	    System.out.println("Welcome to the Character builder for Jimtonia!");
 	    System.out.println("To start you off, what's your name?");
 	    /** Calls name collection function */
 	    playerName();

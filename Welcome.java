@@ -60,16 +60,18 @@ public class Welcome
 				System.out.println("Choose a filename to load from, the extension will be applied automatically");
 				String loadname = sc.nextLine();
 			
-				// Open file to read from, named SavedObj.sav.
+				// Open file to read from, loadname.sav 
+				// Supposedly using .sav format over .txt binarises, meaning less space needed.
 				FileInputStream saveFile = new FileInputStream(loadname +".sav");
 			
-				// Create an ObjectInputStream to get objects from save file.
+				// Create an ObjectInputStream to get objects from savefile.
 				ObjectInputStream save = new ObjectInputStream(saveFile);
 			
-				// Now we do the restore.
-				// readObject() returns a generic Object, we cast those back
-				// into their original class type.
-				// For primitive types, use the corresponding reference class.
+				// Now we restore the data
+				// readObject() returns a generic Object, Compiler can't read this
+				// Turn this object into the original Variable type for each value.
+				
+				//variable = (variabletype) save.readObject();
 				playerClass = (String) save.readObject();
 				playerRace = (String) save.readObject();
 				playerName = (String) save.readObject();
@@ -81,6 +83,7 @@ public class Welcome
 				inv = (char[][]) save.readObject();
 				coins = (int) save.readObject();
 			
+				// Should change this to something less static, have both saved/loaded
 				MainApp.loc = new char[][] { {'W', 'W', 'W', 'C'}, {'W', 'T', 'W', 'W'}, {'C', 'W', 'W', 'W'}, {'W', 'W', 'T', 'W'} };
 				chest = false;
 			

@@ -37,7 +37,7 @@ public class GameEnviro
 	    			ToolsInteract.interact();
 	    			break;
 	    		case 3:
-	    			ToolsInventory.open();
+	    			ToolsInventory.main(null);
 	    			break;
 	    		case 4:
 	    			ToolsTravel.show_map();
@@ -65,7 +65,7 @@ public class GameEnviro
 
 		System.out.printf("%s %s Named %s\n",Statistics.player_race, Statistics.player_class, Statistics.player_name); 
 		System.out.printf("With %d/%d Health, %d Armour, %d Attack, and %d Evasion\n", Statistics.player_stats[0], Statistics.player_stats[1], Statistics.player_stats[2], Statistics.player_stats[3], Statistics.player_stats[4]);
-		System.out.printf("They are located at (%d,%d) Which is a %s\n", Statistics.trav_loc_x,Statistics.trav_loc_y, Statistics.location_type);
+		System.out.printf("They are located at (%d,%d) Which is a %s\n", Statistics.trav_loc_x,Statistics.trav_loc_y, Statistics.location_name);
 	}
 	
 	

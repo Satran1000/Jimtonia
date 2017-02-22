@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class AdminTools 
 {
-	public static String build_no = "0.1.0";
-	public static String build_name = "Jimtonia";
+	public static String build_no = "0.1.1"; //The current version of the game
+	public static String build_name = "Jimtonia"; //The current title of the game
 	
+	//Saving protocol
 	public static void saveGame()
 	{
 		try
@@ -43,6 +44,7 @@ public class AdminTools
 		System.out.println("Game Saved!");
 	}
 	
+	//Loading protocol
 	public static void loadGame()
 	{
 		
